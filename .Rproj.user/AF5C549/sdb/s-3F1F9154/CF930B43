@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#'Insert size\n#'\n#'@param bamfile that path to bam file\n#'\n\ninsert_size <- function(bamfile){\n  p_ins <- ScanBamParam(what=scanBamWhat(),flag=scanBamFlag(isPaired = TRUE,isProperPair = TRUE))\n  in_size = scanBam(bamfile, param=p_ins)[[1]]$isize\n  return(in_size)\n}\n",
+    "created" : 1520311595447.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2856037694",
+    "id" : "CF930B43",
+    "lastKnownWriteTime" : 1520309748,
+    "last_content_update" : 1520309748,
+    "path" : "~/Documents/Rdata/QCRNAseq/R/insert_size.R",
+    "project_path" : "R/insert_size.R",
+    "properties" : {
+        "tempName" : "Untitled4"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' return name of unmapped reads\n#'\n#' @param bamfile the path to the bam file\n\n\nunmapped_reads <- function(bamfile){\n\n  p2 <- ScanBamParam(what=scanBamWhat(),flag=scanBamFlag(isUnmappedQuery = TRUE))\n  unmap = scanBam(bamfile, param=p2)[[1]]$qname\n  return(unmap)\n\n}\n",
+    "created" : 1520311689477.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "81832465",
+    "id" : "7E5537EF",
+    "lastKnownWriteTime" : 1520311508,
+    "last_content_update" : 1520311508,
+    "path" : "~/Documents/Rdata/QCRNAseq/R/unmapped_reads.R",
+    "project_path" : "R/unmapped_reads.R",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

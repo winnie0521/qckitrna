@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "testthat::\n  \n  \n  bamfile<- system.file(\"extdata\", \"ex1.bam\", package=\"Rsamtools\",mustWork=TRUE)",
+    "created" : 1520286224137.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1790400984",
+    "id" : "B67DA1E4",
+    "lastKnownWriteTime" : 1519971072,
+    "last_content_update" : 1520286243511,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

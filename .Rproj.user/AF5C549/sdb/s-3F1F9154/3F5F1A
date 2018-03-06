@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' unique mapping\n#'\n#' @param bamfile the path to bam file\n\n\nunq_map <- function(bamfile){\n\n  p_um <- ScanBamParam(what=scanBamWhat(),flag=scanBamFlag(isUnmappedQuery = FALSE))\n  uniq_map_r = scanBam(bamfile, param=p_um)[[1]]\n\n  uniq_map  <- lapply(uniq_map_r, function(x)x[uniq_map_r$mapq>30])\n  return(uniq_map)\n}\n",
+    "created" : 1520311694077.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "63615711",
+    "id" : "3F5F1A",
+    "lastKnownWriteTime" : 1520311727,
+    "last_content_update" : 1520311727534,
+    "path" : "~/Documents/Rdata/QCRNAseq/R/unq_mapping.R",
+    "project_path" : "R/unq_mapping.R",
+    "properties" : {
+        "tempName" : "Untitled4"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

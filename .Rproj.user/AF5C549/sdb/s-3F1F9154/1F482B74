@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' multiple mapping\n#'\n#' @param bamfile the path to bam file\n\n\nmult_map <- function(bamfile){\np_mm <- ScanBamParam(what=scanBamWhat(),flag=scanBamFlag(isUnmappedQuery = FALSE))\nmult_map_r = scanBam(bamfile, param=p_mm)[[1]]\n\nmult_map  <- lapply(mult_map_r, function(x)x[mult_map_r$mapq<=30])\nreturn(mult_map)\n}\n",
+    "created" : 1520311692986.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "182173534",
+    "id" : "1F482B74",
+    "lastKnownWriteTime" : 1520311683,
+    "last_content_update" : 1520311683,
+    "path" : "~/Documents/Rdata/QCRNAseq/R/mult_map.R",
+    "project_path" : "R/mult_map.R",
+    "properties" : {
+        "tempName" : "Untitled3"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

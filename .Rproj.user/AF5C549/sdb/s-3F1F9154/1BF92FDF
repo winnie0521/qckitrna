@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' mapping quality\n#'\n#' @param bamfile path to bam file\n\nmap_qua <- function(bamfile){\n\n  p_mapq <- ScanBamParam(what=scanBamWhat(),flag=scanBamFlag(isUnmappedQuery = FALSE))\n  mapq = scanBam(bamfile, param=p_mapq)[[1]]$mapq\n  return(mapq)\n}\n",
+    "created" : 1520311790926.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2701965236",
+    "id" : "1BF92FDF",
+    "lastKnownWriteTime" : 1520311796,
+    "last_content_update" : 1520311796915,
+    "path" : "~/Documents/Rdata/QCRNAseq/R/map_qua.R",
+    "project_path" : "R/map_qua.R",
+    "properties" : {
+        "tempName" : "Untitled4"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
