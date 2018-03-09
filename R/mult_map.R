@@ -16,3 +16,4 @@ if (option == "count") return(length(mult_map$qname))
 if (option == "rate") return(length(mult_map$qname)/length)
 
 }
+
