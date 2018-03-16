@@ -5,7 +5,7 @@
 
 map_qua <- function(bamfile){
 
-  p_mapq <- ScanBamParam(what=scanBamWhat(),flag=scanBamFlag(isUnmappedQuery = FALSE))
+  p_mapq <- ScanBamParam(what=scanBamWhat(),flag=scanBamFlag())
   mapq = scanBam(bamfile, param=p_mapq)[[1]]$mapq
   return(mapq)
 }
