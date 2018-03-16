@@ -4,12 +4,14 @@
 \alias{mult_map}
 \title{multiple mapping}
 \usage{
-mult_map(bamfile, quality = 30)
+mult_map(bamfile, quality = 30, option)
 }
 \arguments{
 \item{bamfile}{the path to bam file}
 
 \item{quality}{set default of mapping quality standard to 30}
+
+\item{option}{either count or rate}
 }
 \description{
 multiple mapping

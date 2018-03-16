@@ -1,6 +1,7 @@
 #' mapping quality
 #'
 #' @param bamfile path to bam file
+#' @export
 
 map_qua <- function(bamfile){
 

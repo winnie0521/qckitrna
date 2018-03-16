@@ -4,10 +4,12 @@
 \alias{chromosome}
 \title{chromosome}
 \usage{
-chromosome(bamfile)
+chromosome(bamfile, option)
 }
 \arguments{
 \item{bamfile}{path to bam file}
+
+\item{option}{either count, rate or length enter as string}
 }
 \description{
 chromosome

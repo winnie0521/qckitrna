@@ -2,6 +2,9 @@
 #'
 #' @param bamfile the path to bam file
 #' @param quality set default to 30
+#' @param option either count or rate
+#' @importFrom Rsamtools ScanBamParam scanBam
+#' @export
 
 
 unq_map <- function(bamfile,quality=30,option){
@@ -11,7 +14,6 @@ unq_map <- function(bamfile,quality=30,option){
 
   uniq_map  <- lapply(uniq_map_r, function(x)x[uniq_map_r$mapq>quality])
 
-  length <- bam_length(bamfile)
   if (option == "count") return(length(uniq_map$qname))
-  if (option == "rate") return(length(uniq_map$qname)/length)
+  if (option == "rate") return(length(uniq_map$qname)/bam_length(bamfile))
 }

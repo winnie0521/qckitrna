@@ -4,10 +4,12 @@
 \alias{unmapped_reads}
 \title{return name of unmapped reads}
 \usage{
-unmapped_reads(bamfile)
+unmapped_reads(bamfile, option)
 }
 \arguments{
 \item{bamfile}{the path to the bam file}
+
+\item{option}{'count' or 'rate' gives either count of unmapped reads or the rate of unmapped reads}
 }
 \description{
 return name of unmapped reads

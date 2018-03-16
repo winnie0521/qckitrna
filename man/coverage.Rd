@@ -6,6 +6,9 @@
 \usage{
 coverage(bamfile)
 }
+\arguments{
+\item{bamfile}{the path to the bam file}
+}
 \value{
 coverage rate mean, median and sd matrix
 }

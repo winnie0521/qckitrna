@@ -1,6 +1,6 @@
 #' coverage rate: mean, median and sd
 #'
-#' @param bamfile
+#' @param bamfile the path to the bam file
 #' @return coverage rate mean, median and sd matrix
 
 

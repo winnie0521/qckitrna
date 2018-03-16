@@ -1,4 +1,7 @@
-#’ length of entire bam file
+#' length of entire bam file
+#' @param bamfile the path to the BAM file
+#' @export
+#' @importFrom Rsamtools ScanBamParam scanBam
 
 
 bam_length <- function(bamfile){

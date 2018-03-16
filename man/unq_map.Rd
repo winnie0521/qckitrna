@@ -4,12 +4,14 @@
 \alias{unq_map}
 \title{unique mapping}
 \usage{
-unq_map(bamfile, quality = 30)
+unq_map(bamfile, quality = 30, option)
 }
 \arguments{
 \item{bamfile}{the path to bam file}
 
 \item{quality}{set default to 30}
+
+\item{option}{either count or rate}
 }
 \description{
 unique mapping
